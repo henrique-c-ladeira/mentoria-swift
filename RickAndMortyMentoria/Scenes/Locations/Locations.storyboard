@@ -11,7 +11,7 @@
         <!--Locations-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="LocationsVC" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationsVC" id="Y6W-OH-hqX" customClass="LocationViewController" customModule="RickAndMortyMentoria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Locations" image="location" catalog="system" selectedImage="location.fill" id="xg5-aD-IlT" userLabel="Locations"/>
                     <navigationItem key="navigationItem" title="Locations" id="A3z-1L-c4C">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="aA2-PO-6L8"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="aA2-PO-6L8">
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="Y6W-OH-hqX" id="Wq2-US-LYa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

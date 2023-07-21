@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1943E8172A6AF4A400016A3C /* LocationsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943E8162A6AF4A400016A3C /* LocationsModels.swift */; };
+		1943E81B2A6AF92700016A3C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943E81A2A6AF92700016A3C /* LocationViewController.swift */; };
 		197BA2542A4F572F00B55D3A /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197BA2532A4F572F00B55D3A /* CharactersViewController.swift */; };
 		19FBD8342A44C692006BEAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBD8332A44C692006BEAA0 /* AppDelegate.swift */; };
 		19FBD8382A44C692006BEAA0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBD8372A44C692006BEAA0 /* TabBarController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1943E8162A6AF4A400016A3C /* LocationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsModels.swift; sourceTree = "<group>"; };
+		1943E81A2A6AF92700016A3C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		197BA2532A4F572F00B55D3A /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		19FBD8302A44C692006BEAA0 /* RickAndMortyMentoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyMentoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FBD8332A44C692006BEAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1943E8152A6AF47500016A3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1943E8162A6AF4A400016A3C /* LocationsModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		19FBD8272A44C692006BEAA0 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				19FBD8412A44C694006BEAA0 /* Info.plist */,
+				1943E8152A6AF47500016A3C /* Models */,
 				19FBD8652A44CACA006BEAA0 /* Scenes */,
 				19FBD8642A44CA9B006BEAA0 /* Resources */,
 				19FBD8632A44CA75006BEAA0 /* Sources */,
@@ -175,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				19FBD86C2A44CF15006BEAA0 /* Locations.storyboard */,
+				1943E81A2A6AF92700016A3C /* LocationViewController.swift */,
 			);
 			path = Locations;
 			sourceTree = "<group>";
@@ -330,6 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1943E81B2A6AF92700016A3C /* LocationViewController.swift in Sources */,
+				1943E8172A6AF4A400016A3C /* LocationsModels.swift in Sources */,
 				19FBD8382A44C692006BEAA0 /* TabBarController.swift in Sources */,
 				19FBD8342A44C692006BEAA0 /* AppDelegate.swift in Sources */,
 				197BA2542A4F572F00B55D3A /* CharactersViewController.swift in Sources */,
