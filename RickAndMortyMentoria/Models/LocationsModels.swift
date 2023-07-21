@@ -13,7 +13,7 @@ struct Location: Codable {
     let type: String
     let dimension: String
     let residents: [String]
-    let url: [String]
+    let url: String
     let created: String
     
     enum CodingKeys: String, CodingKey {
