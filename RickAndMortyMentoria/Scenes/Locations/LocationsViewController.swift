@@ -7,15 +7,23 @@
 
 import UIKit
 
-class LocationViewController: UIViewController {
+class LocationsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         getAllLocations()
     }
     
+    private func configureTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
     private func getAllLocations() {
-        let baseURL = "https://rickandmortyapi/com/api/"
+        let baseURL = "https://rickandmortyapi.com/api/"
         let endpoint = "location"
         let urlString = "\(baseURL)\(endpoint)"
         
@@ -29,7 +37,7 @@ class LocationViewController: UIViewController {
         
         let session = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
-                print("ErrorL \(error)")
+                print("Error: \(error)")
             }
             
             guard let data = data else {
@@ -56,4 +64,25 @@ class LocationViewController: UIViewController {
     }
     
 
+}
+
+extension LocationsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath) as UITableViewCell
+        cell.textLabel?.text = "row: \(indexPath.row)"
+        cell.detailTextLabel?.text = "row: \(indexPath.section)"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected \(indexPath) \(tableView)")
+    }
 }
