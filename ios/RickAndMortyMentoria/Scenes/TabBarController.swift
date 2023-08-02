@@ -27,7 +27,9 @@ class TabBarController: UITabBarController {
         let settingsStoryboard = UIStoryboard(name: "Settings", bundle: nil)
         let settingsVC = settingsStoryboard.instantiateViewController(withIdentifier: "SettingsNavigation")
         
-        setViewControllers([charactersVC, locationsVC, episodesVC, settingsVC], animated: true)
+        let reactVC = ReactViewController()
+        
+        setViewControllers([charactersVC, locationsVC, episodesVC, settingsVC, reactVC], animated: true)
     }
 
 }

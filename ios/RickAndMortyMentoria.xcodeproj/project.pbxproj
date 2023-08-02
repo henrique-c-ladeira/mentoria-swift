@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1943E8172A6AF4A400016A3C /* LocationsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943E8162A6AF4A400016A3C /* LocationsModels.swift */; };
 		1943E81B2A6AF92700016A3C /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1943E81A2A6AF92700016A3C /* LocationsViewController.swift */; };
+		194BF5AD2A7B093D00DC5092 /* ReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194BF5AC2A7B093D00DC5092 /* ReactViewController.swift */; };
 		197BA2542A4F572F00B55D3A /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197BA2532A4F572F00B55D3A /* CharactersViewController.swift */; };
 		19FBD8342A44C692006BEAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBD8332A44C692006BEAA0 /* AppDelegate.swift */; };
 		19FBD8382A44C692006BEAA0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBD8372A44C692006BEAA0 /* TabBarController.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1943E8162A6AF4A400016A3C /* LocationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsModels.swift; sourceTree = "<group>"; };
 		1943E81A2A6AF92700016A3C /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		194BF5AC2A7B093D00DC5092 /* ReactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewController.swift; sourceTree = "<group>"; };
 		197BA2532A4F572F00B55D3A /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		19FBD8302A44C692006BEAA0 /* RickAndMortyMentoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyMentoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FBD8332A44C692006BEAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 				1943E8162A6AF4A400016A3C /* LocationsModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		194BF5AB2A7B08FE00DC5092 /* React */ = {
+			isa = PBXGroup;
+			children = (
+				194BF5AC2A7B093D00DC5092 /* ReactViewController.swift */,
+			);
+			path = React;
 			sourceTree = "<group>";
 		};
 		19FBD8272A44C692006BEAA0 = {
@@ -168,6 +178,7 @@
 				19FBD8672A44CE35006BEAA0 /* Locations */,
 				19FBD8682A44CE39006BEAA0 /* Episodes */,
 				19FBD8692A44CE42006BEAA0 /* Settings */,
+				194BF5AB2A7B08FE00DC5092 /* React */,
 				19FBD8372A44C692006BEAA0 /* TabBarController.swift */,
 				19FBD8392A44C692006BEAA0 /* Main.storyboard */,
 				19FBD83E2A44C694006BEAA0 /* LaunchScreen.storyboard */,
@@ -346,6 +357,7 @@
 			files = (
 				1943E81B2A6AF92700016A3C /* LocationsViewController.swift in Sources */,
 				1943E8172A6AF4A400016A3C /* LocationsModels.swift in Sources */,
+				194BF5AD2A7B093D00DC5092 /* ReactViewController.swift in Sources */,
 				19FBD8382A44C692006BEAA0 /* TabBarController.swift in Sources */,
 				19FBD8342A44C692006BEAA0 /* AppDelegate.swift in Sources */,
 				197BA2542A4F572F00B55D3A /* CharactersViewController.swift in Sources */,
