@@ -23,6 +23,9 @@
 		19FBD86D2A44CF15006BEAA0 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FBD86C2A44CF15006BEAA0 /* Locations.storyboard */; };
 		19FBD86F2A44CF33006BEAA0 /* Episodes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FBD86E2A44CF33006BEAA0 /* Episodes.storyboard */; };
 		19FBD8712A44CF42006BEAA0 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FBD8702A44CF42006BEAA0 /* Settings.storyboard */; };
+		622A9F98A72F446B95C40C9E /* libPods-RickAndMortyMentoriaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BABE2D3F738B7A0C338A3931 /* libPods-RickAndMortyMentoriaTests.a */; };
+		BF4C1924CBC1EA84B39BDB03 /* libPods-RickAndMortyMentoria.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29583A60D098586232D9E4F /* libPods-RickAndMortyMentoria.a */; };
+		FCD9E8163B841A71EF1615F2 /* libPods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E70219A47E4F9511E4CD5021 /* libPods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DBA657E6ADD9C0203C5BC0 /* Pods-RickAndMortyMentoriaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMentoriaTests.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMentoriaTests/Pods-RickAndMortyMentoriaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1943E8162A6AF4A400016A3C /* LocationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsModels.swift; sourceTree = "<group>"; };
 		1943E81A2A6AF92700016A3C /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		194BF5AC2A7B093D00DC5092 /* ReactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,14 @@
 		19FBD86C2A44CF15006BEAA0 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
 		19FBD86E2A44CF33006BEAA0 /* Episodes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Episodes.storyboard; sourceTree = "<group>"; };
 		19FBD8702A44CF42006BEAA0 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		21307540C390A2CA4C59AEAC /* Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8DF6D7FDD72085E4A6F0D481 /* Pods-RickAndMortyMentoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMentoria.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria.release.xcconfig"; sourceTree = "<group>"; };
+		A29583A60D098586232D9E4F /* libPods-RickAndMortyMentoria.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RickAndMortyMentoria.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABE2D3F738B7A0C338A3931 /* libPods-RickAndMortyMentoriaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RickAndMortyMentoriaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67ABA3D2F64B0B9E386AF47 /* Pods-RickAndMortyMentoriaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMentoriaTests.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMentoriaTests/Pods-RickAndMortyMentoriaTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9E110328240E2DD91327A35 /* Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD10649D1B78D403F13C8E7E /* Pods-RickAndMortyMentoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMentoria.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria.debug.xcconfig"; sourceTree = "<group>"; };
+		E70219A47E4F9511E4CD5021 /* libPods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4C1924CBC1EA84B39BDB03 /* libPods-RickAndMortyMentoria.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622A9F98A72F446B95C40C9E /* libPods-RickAndMortyMentoriaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD9E8163B841A71EF1615F2 /* libPods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A6864CE169824C61050B75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A29583A60D098586232D9E4F /* libPods-RickAndMortyMentoria.a */,
+				E70219A47E4F9511E4CD5021 /* libPods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.a */,
+				BABE2D3F738B7A0C338A3931 /* libPods-RickAndMortyMentoriaTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1943E8152A6AF47500016A3C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +138,8 @@
 				19FBD8492A44C694006BEAA0 /* RickAndMortyMentoriaTests */,
 				19FBD8532A44C694006BEAA0 /* RickAndMortyMentoriaUITests */,
 				19FBD8312A44C692006BEAA0 /* Products */,
+				C955D9095FC34C5F78EACCAB /* Pods */,
+				01A6864CE169824C61050B75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +247,20 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		C955D9095FC34C5F78EACCAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD10649D1B78D403F13C8E7E /* Pods-RickAndMortyMentoria.debug.xcconfig */,
+				8DF6D7FDD72085E4A6F0D481 /* Pods-RickAndMortyMentoria.release.xcconfig */,
+				C9E110328240E2DD91327A35 /* Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.debug.xcconfig */,
+				21307540C390A2CA4C59AEAC /* Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.release.xcconfig */,
+				01DBA657E6ADD9C0203C5BC0 /* Pods-RickAndMortyMentoriaTests.debug.xcconfig */,
+				C67ABA3D2F64B0B9E386AF47 /* Pods-RickAndMortyMentoriaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19FBD85A2A44C694006BEAA0 /* Build configuration list for PBXNativeTarget "RickAndMortyMentoria" */;
 			buildPhases = (
+				F23E7FE8D9CA5E246BFE56B9 /* [CP] Check Pods Manifest.lock */,
 				19FBD82C2A44C692006BEAA0 /* Sources */,
 				19FBD82D2A44C692006BEAA0 /* Frameworks */,
 				19FBD82E2A44C692006BEAA0 /* Resources */,
+				73C2FEC96C8A7181A878153C /* [CP] Embed Pods Frameworks */,
+				23D71C131097D3CF94BC6193 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19FBD85D2A44C694006BEAA0 /* Build configuration list for PBXNativeTarget "RickAndMortyMentoriaTests" */;
 			buildPhases = (
+				B9C162B037B863B9B615D3A6 /* [CP] Check Pods Manifest.lock */,
 				19FBD8422A44C694006BEAA0 /* Sources */,
 				19FBD8432A44C694006BEAA0 /* Frameworks */,
 				19FBD8442A44C694006BEAA0 /* Resources */,
@@ -262,9 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19FBD8602A44C694006BEAA0 /* Build configuration list for PBXNativeTarget "RickAndMortyMentoriaUITests" */;
 			buildPhases = (
+				86912BA04EE410F01579DA22 /* [CP] Check Pods Manifest.lock */,
 				19FBD84C2A44C694006BEAA0 /* Sources */,
 				19FBD84D2A44C694006BEAA0 /* Frameworks */,
 				19FBD84E2A44C694006BEAA0 /* Resources */,
+				8781A7EE1B4211A60CCF1AAE /* [CP] Embed Pods Frameworks */,
+				3FA7035D0E3AFBA9842E1057 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,6 +398,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23D71C131097D3CF94BC6193 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA7035D0E3AFBA9842E1057 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C2FEC96C8A7181A878153C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria/Pods-RickAndMortyMentoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86912BA04EE410F01579DA22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8781A7EE1B4211A60CCF1AAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests/Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C162B037B863B9B615D3A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAndMortyMentoriaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F23E7FE8D9CA5E246BFE56B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAndMortyMentoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19FBD82C2A44C692006BEAA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -422,7 +607,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -452,6 +637,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -470,6 +656,9 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -482,7 +671,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -512,6 +701,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -523,6 +713,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -532,6 +725,7 @@
 		};
 		19FBD85B2A44C694006BEAA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD10649D1B78D403F13C8E7E /* Pods-RickAndMortyMentoria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -560,6 +754,7 @@
 		};
 		19FBD85C2A44C694006BEAA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF6D7FDD72085E4A6F0D481 /* Pods-RickAndMortyMentoria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,6 +783,7 @@
 		};
 		19FBD85E2A44C694006BEAA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01DBA657E6ADD9C0203C5BC0 /* Pods-RickAndMortyMentoriaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -608,6 +804,7 @@
 		};
 		19FBD85F2A44C694006BEAA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67ABA3D2F64B0B9E386AF47 /* Pods-RickAndMortyMentoriaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +825,7 @@
 		};
 		19FBD8612A44C694006BEAA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E110328240E2DD91327A35 /* Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -646,6 +844,7 @@
 		};
 		19FBD8622A44C694006BEAA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21307540C390A2CA4C59AEAC /* Pods-RickAndMortyMentoria-RickAndMortyMentoriaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
