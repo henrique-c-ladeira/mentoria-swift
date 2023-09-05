@@ -11,18 +11,33 @@
         <!--Episodes-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="EpisodesVC" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EpisodesVC" id="Y6W-OH-hqX" customClass="EpisodesViewController" customModule="RickAndMortyMentoria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YIH-Jr-Jmy">
+                                <rect key="frame" x="0.0" y="155" width="393" height="614"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YIH-Jr-Jmy" secondAttribute="trailing" id="DLE-E1-PCk"/>
+                            <constraint firstItem="YIH-Jr-Jmy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="R1M-Zp-8vM"/>
+                            <constraint firstItem="YIH-Jr-Jmy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ws8-G4-DhN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YIH-Jr-Jmy" secondAttribute="bottom" id="X4Z-pU-KGa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="list.dash" catalog="system" id="kvF-ab-AbT" userLabel="Episodes"/>
                     <navigationItem key="navigationItem" title="Episodes" id="MaU-vo-LkY">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="l9U-s8-SZs"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="YIH-Jr-Jmy" id="5UQ-Yu-rim"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
