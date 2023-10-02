@@ -15,6 +15,8 @@
 		1992B9742A97C9C700BC59E7 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992B9722A97C9C600BC59E7 /* EpisodeTableViewCell.swift */; };
 		1992B9752A97C9C700BC59E7 /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1992B9732A97C9C700BC59E7 /* EpisodeTableViewCell.xib */; };
 		19996F882A856AFD008CC7C3 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19996F872A856AFD008CC7C3 /* LocationTableViewCell.swift */; };
+		19B085032ACB5BBD00CB17AB /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B085022ACB5BBD00CB17AB /* CharacterDetailView.swift */; };
+		19B085052ACB5BE600CB17AB /* CharacterDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B085042ACB5BE600CB17AB /* CharacterDetailView.xib */; };
 		19E729042A8E99E500D9FC27 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E729032A8E99E500D9FC27 /* EpisodesViewController.swift */; };
 		19E729062A8E9F3C00D9FC27 /* EpisodesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E729052A8E9F3C00D9FC27 /* EpisodesModels.swift */; };
 		19E729082A8E9FD100D9FC27 /* CharactersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E729072A8E9FD100D9FC27 /* CharactersModels.swift */; };
@@ -59,6 +61,8 @@
 		1992B9722A97C9C600BC59E7 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		1992B9732A97C9C700BC59E7 /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		19996F872A856AFD008CC7C3 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		19B085022ACB5BBD00CB17AB /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		19B085042ACB5BE600CB17AB /* CharacterDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailView.xib; sourceTree = "<group>"; };
 		19E729032A8E99E500D9FC27 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		19E729052A8E9F3C00D9FC27 /* EpisodesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesModels.swift; sourceTree = "<group>"; };
 		19E729072A8E9FD100D9FC27 /* CharactersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModels.swift; sourceTree = "<group>"; };
@@ -132,6 +136,15 @@
 				1992B9732A97C9C700BC59E7 /* EpisodeTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		19B085012ACB5B4C00CB17AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19B085022ACB5BBD00CB17AB /* CharacterDetailView.swift */,
+				19B085042ACB5BE600CB17AB /* CharacterDetailView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		19FBD8272A44C692006BEAA0 = {
@@ -219,6 +232,7 @@
 				19FBD86A2A44CF06006BEAA0 /* Characters.storyboard */,
 				197BA2532A4F572F00B55D3A /* CharactersViewController.swift */,
 				19F409D82ABCDDF300C7641B /* CharacterDetailsViewController.swift */,
+				19B085012ACB5B4C00CB17AB /* View */,
 				1940AD9A2AA1172700582B62 /* Cell */,
 			);
 			path = Characters;
@@ -365,6 +379,7 @@
 				19FBD83B2A44C692006BEAA0 /* Main.storyboard in Resources */,
 				1940AD9E2AA1175200582B62 /* CharacterCollectionViewCell.xib in Resources */,
 				19FBD8712A44CF42006BEAA0 /* Settings.storyboard in Resources */,
+				19B085052ACB5BE600CB17AB /* CharacterDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +407,7 @@
 				19996F882A856AFD008CC7C3 /* LocationTableViewCell.swift in Sources */,
 				1943E81B2A6AF92700016A3C /* LocationsViewController.swift in Sources */,
 				19E729042A8E99E500D9FC27 /* EpisodesViewController.swift in Sources */,
+				19B085032ACB5BBD00CB17AB /* CharacterDetailView.swift in Sources */,
 				1992B9742A97C9C700BC59E7 /* EpisodeTableViewCell.swift in Sources */,
 				1943E8172A6AF4A400016A3C /* LocationsModels.swift in Sources */,
 				19F409D92ABCDDF300C7641B /* CharacterDetailsViewController.swift in Sources */,

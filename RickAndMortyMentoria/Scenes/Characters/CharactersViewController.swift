@@ -72,6 +72,14 @@ class CharactersViewController: UIViewController {
 }
 
 extension CharactersViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = characters[indexPath.item]
+        let characterStoryboard = UIStoryboard(name: "Characters", bundle: nil)
+        let characterVC = characterStoryboard.instantiateViewController(withIdentifier: "CharacterDetailVC") as! CharacterDetailsViewController
+        navigationController?.pushViewController(characterVC, animated: true)
+        characterVC.configure(with: character)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         characters.count
     }
