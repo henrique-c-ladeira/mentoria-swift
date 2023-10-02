@@ -87,7 +87,6 @@ extension CharactersViewController: UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = (view.frame.width - 3 * 16) / 2
         return CGSize(width: cellWidth, height: 285)
-        
     }
 }
 
@@ -102,6 +101,4 @@ extension CharactersViewController: CharacterCollectionViewCellDelegate {
         }
         urlSession.resume()
     }
-    
-    
 }
