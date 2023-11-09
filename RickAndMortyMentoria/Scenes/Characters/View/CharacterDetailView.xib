@@ -8,9 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailView" customModule="RickAndMortyMentoria" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="YBn-xg-PB6" id="mpQ-SD-guh"/>
+                <outlet property="typeLabel" destination="hlh-mE-2i5" id="nnz-87-ivn"/>
+                <outlet property="typeView" destination="824-uF-pss" id="kGW-JA-BXh"/>
+                <outlet property="valueLabel" destination="6XK-CG-SJ1" id="Ty4-OT-F6z"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="EYg-wk-c1b" customClass="CharacterDetailView" customModule="RickAndMortyMentoria" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="EYg-wk-c1b">
             <rect key="frame" x="0.0" y="0.0" width="297" height="251"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -49,13 +56,12 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     <constraints>
-                        <constraint firstItem="6XK-CG-SJ1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7Ow-gg-gh0" secondAttribute="top" id="3kO-Vq-gJr"/>
+                        <constraint firstItem="6XK-CG-SJ1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7Ow-gg-gh0" secondAttribute="top" constant="30" id="3kO-Vq-gJr"/>
                         <constraint firstItem="6XK-CG-SJ1" firstAttribute="centerY" secondItem="YBn-xg-PB6" secondAttribute="centerY" id="9bk-fG-EsY"/>
                         <constraint firstItem="6XK-CG-SJ1" firstAttribute="leading" secondItem="YBn-xg-PB6" secondAttribute="trailing" constant="10" id="IYa-yI-ZZZ"/>
                         <constraint firstAttribute="trailing" secondItem="6XK-CG-SJ1" secondAttribute="trailing" constant="10" id="b7F-wB-MIg"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6XK-CG-SJ1" secondAttribute="bottom" id="e91-UY-ft9"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6XK-CG-SJ1" secondAttribute="bottom" constant="30" id="e91-UY-ft9"/>
                         <constraint firstItem="YBn-xg-PB6" firstAttribute="centerY" secondItem="7Ow-gg-gh0" secondAttribute="centerY" id="xWH-QG-QcP"/>
                         <constraint firstItem="YBn-xg-PB6" firstAttribute="leading" secondItem="7Ow-gg-gh0" secondAttribute="leading" constant="10" id="ykb-6I-n52"/>
                     </constraints>
@@ -73,12 +79,6 @@
                 <constraint firstAttribute="trailing" secondItem="824-uF-pss" secondAttribute="trailing" id="lqN-44-77c"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="imageView" destination="YBn-xg-PB6" id="QAG-H6-BOz"/>
-                <outlet property="typeLabel" destination="hlh-mE-2i5" id="9is-hl-XXq"/>
-                <outlet property="typeView" destination="824-uF-pss" id="KVR-xQ-llG"/>
-                <outlet property="valueLabel" destination="6XK-CG-SJ1" id="UgL-vY-AFm"/>
-            </connections>
             <point key="canvasLocation" x="-55.725190839694655" y="-837.67605633802816"/>
         </view>
     </objects>
@@ -88,9 +88,6 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,18 +10,15 @@ import UIKit
 class CharactersViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var characters: [Character] = []
+    var imageLoader: ImageLoader { .shared }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
         configureCollectionViewLayout()
         getAllCharacters()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        collectionView.reloadData()
     }
     
     @IBAction func searchIconTapped(_ sender: Any) {
@@ -71,13 +68,14 @@ class CharactersViewController: UIViewController {
     }
 }
 
-extension CharactersViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension CharactersViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, ImageLoaderDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let character = characters[indexPath.item]
         let characterStoryboard = UIStoryboard(name: "Characters", bundle: nil)
         let characterVC = characterStoryboard.instantiateViewController(withIdentifier: "CharacterDetailVC") as! CharacterDetailsViewController
+        characterVC.model = character
+        characterVC.delegate = self
         navigationController?.pushViewController(characterVC, animated: true)
-        characterVC.configure(with: character)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -100,13 +98,14 @@ extension CharactersViewController: UICollectionViewDataSource, UICollectionView
 
 extension CharactersViewController: CharacterCollectionViewCellDelegate {
     func fetchImage(url: String, completion: @escaping ((Data?) -> Void)) {
-        guard let url = URL(string: url) else { completion(nil); return }
-        let urlRequest = URLRequest(url: url)
-        let urlSession = URLSession.shared.dataTask(with: urlRequest) {data, _, error in
-            if let _ = error { completion(nil); return }
-            guard let data = data else { completion(nil); return }
-            completion(data)
+        imageLoader.fetchImage(url: url) { result in
+            switch result {
+            case .success(let data):
+                completion(data)
+            case .failure(_):
+                completion(nil)
+            }
+            
         }
-        urlSession.resume()
     }
 }

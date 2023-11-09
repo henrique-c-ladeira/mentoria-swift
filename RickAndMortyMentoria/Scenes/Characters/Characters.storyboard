@@ -79,13 +79,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJv-4B-J1k">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJv-4B-J1k">
                                 <rect key="frame" x="0.0" y="155" width="393" height="614"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgE-cG-0nL">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rick" translatesAutoresizingMaskIntoConstraints="NO" id="8Og-vg-ol2">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Og-vg-ol2">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8Og-vg-ol2" secondAttribute="height" multiplier="1:1" id="goQ-S8-FZA"/>
@@ -100,31 +100,30 @@
                                             <constraint firstItem="8Og-vg-ol2" firstAttribute="leading" secondItem="qgE-cG-0nL" secondAttribute="leading" id="wdK-AJ-Abn"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T6U-75-lMU">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T6U-75-lMU">
                                         <rect key="frame" x="0.0" y="393" width="393" height="200"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Hf2-Ku-mWj">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Hf2-Ku-mWj">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Yfv-Sk-v9k">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Yfv-Sk-v9k">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="50"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-Ey-sYl">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="100" width="393" height="50"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IlE-RT-xqN">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                                <rect key="frame" x="0.0" y="150" width="393" height="50"/>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="T6U-75-lMU" firstAttribute="leading" secondItem="3a8-xe-GKc" secondAttribute="leading" id="2Eg-zH-ZLT"/>
+                                    <constraint firstItem="T6U-75-lMU" firstAttribute="bottom" secondItem="qvg-9p-Erj" secondAttribute="bottom" id="2Oh-3s-NDg"/>
                                     <constraint firstItem="qgE-cG-0nL" firstAttribute="top" secondItem="qvg-9p-Erj" secondAttribute="top" id="3UG-HL-jUI"/>
-                                    <constraint firstItem="3a8-xe-GKc" firstAttribute="trailing" secondItem="T6U-75-lMU" secondAttribute="trailing" id="J6R-3E-1yT"/>
                                     <constraint firstItem="qgE-cG-0nL" firstAttribute="width" secondItem="3a8-xe-GKc" secondAttribute="width" id="LQh-Bw-I5D"/>
-                                    <constraint firstItem="qgE-cG-0nL" firstAttribute="bottom" secondItem="qvg-9p-Erj" secondAttribute="bottom" id="NgQ-pw-wms"/>
-                                    <constraint firstItem="3a8-xe-GKc" firstAttribute="bottom" secondItem="T6U-75-lMU" secondAttribute="bottom" constant="21" id="XNU-5l-5iH"/>
+                                    <constraint firstItem="qvg-9p-Erj" firstAttribute="trailing" secondItem="T6U-75-lMU" secondAttribute="trailing" id="VTf-oK-Bal"/>
+                                    <constraint firstItem="T6U-75-lMU" firstAttribute="leading" secondItem="qvg-9p-Erj" secondAttribute="leading" id="ZoF-lO-YNM"/>
                                     <constraint firstItem="qgE-cG-0nL" firstAttribute="trailing" secondItem="qvg-9p-Erj" secondAttribute="trailing" id="fbL-Cm-tcz"/>
                                     <constraint firstItem="T6U-75-lMU" firstAttribute="top" secondItem="qgE-cG-0nL" secondAttribute="bottom" id="lR1-Zu-NR3"/>
                                     <constraint firstItem="qgE-cG-0nL" firstAttribute="leading" secondItem="qvg-9p-Erj" secondAttribute="leading" id="nkk-al-GVd"/>
@@ -145,6 +144,10 @@
                     <navigationItem key="navigationItem" id="15M-ZR-8rm"/>
                     <connections>
                         <outlet property="firstStackView" destination="Hf2-Ku-mWj" id="OHY-By-DtN"/>
+                        <outlet property="fourthStackView" destination="IlE-RT-xqN" id="JpJ-ML-Geh"/>
+                        <outlet property="imageView" destination="8Og-vg-ol2" id="swg-03-Aa9"/>
+                        <outlet property="secondStackView" destination="Yfv-Sk-v9k" id="Uay-ua-36w"/>
+                        <outlet property="thirdStackView" destination="qQX-Ey-sYl" id="adx-Kn-VNz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHg-9F-l7J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -156,7 +159,6 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="rick" width="300" height="300"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
