@@ -13,6 +13,8 @@ class LocationsViewController: UIViewController {
     
     var locations: [Location] = []
     
+    let service = RickAndMortyService(httpClient: URLSession.shared)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
@@ -25,44 +27,18 @@ class LocationsViewController: UIViewController {
     }
     
     private func getAllLocations() {
-        let baseURL = "https://rickandmortyapi.com/api/"
-        let endpoint = "location"
-        let urlString = "\(baseURL)\(endpoint)"
-        
-        guard let url = URL(string: urlString) else {
-            print("Invalid URL")
-            return
-        }
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        
-        let session = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
-                print("Error: \(error)")
-            }
-            
-            guard let data = data else {
-                print("No data received")
-                return
-            }
-            
-            do {
-                let locationInfo = try JSONDecoder().decode(LocationInfo.self, from: data)
-                self.locations = locationInfo.results;
+        service.getAllLocations { result in
+            switch result {
+            case .success(let locationsInfo):
+                self.locations = locationsInfo.results;
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-            } catch {
-                print("Error decoding JSON: \(error)")
+            case .failure(let error):
+                print(error)
             }
-            
         }
-        
-        session.resume();
-        
     }
-    
     
     @IBAction func searchButtonTapped(_ sender: Any) {
         

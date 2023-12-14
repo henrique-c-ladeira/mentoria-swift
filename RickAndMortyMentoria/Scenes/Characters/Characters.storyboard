@@ -11,7 +11,7 @@
         <!--Characters-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="CharactersVC" id="Y6W-OH-hqX" customClass="CharactersViewController" customModule="RickAndMortyMentoria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharactersVC" title="Characters" id="Y6W-OH-hqX" customClass="CharactersViewController" customModule="RickAndMortyMentoria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="qlU-h3-KEv">
                             <connections>
                                 <action selector="searchIconTapped:" destination="Y6W-OH-hqX" id="l1j-rG-ajO"/>
-                                <segue destination="jDW-sf-Vmu" kind="show" id="enB-rH-v20"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

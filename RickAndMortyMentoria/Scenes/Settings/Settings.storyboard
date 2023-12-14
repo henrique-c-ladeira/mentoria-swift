@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="gear.circle" catalog="system" selectedImage="gear.circle.fill" id="Uf3-I0-8au" userLabel="Settings"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear.circle" catalog="system" selectedImage="gear.circle.fill" id="Uf3-I0-8au" userLabel="Settings"/>
                     <navigationItem key="navigationItem" title="Settings" id="6ef-Gh-ySp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

@@ -1,20 +1,20 @@
 //
-//  CharacterProvider.swift
+//  EpisodesProvider.swift
 //  RickAndMortyMentoria
 //
-//  Created by Henrique Ladeira on 09/11/23.
+//  Created by Henrique Ladeira on 23/11/23.
 //
 
 import Foundation
 
-enum CharacterProvider {
-    case getAllCharacters
-    case getSingleCharacter(id: Int)
-    case getMultipleCharacter(ids: [Int])
-    case filterCharacters(queryItems: [URLQueryItem])
+enum EpisodesProvider {
+    case getAllEpisodes
+    case getSingleEpisode(id: Int)
+    case filterEpisodes(queryItems: [URLQueryItem])
 }
 
-extension CharacterProvider: ApiEndpoint {
+
+extension EpisodesProvider: ApiEndpoint {
     var baseURLString: String {
         "https://rickandmortyapi.com"
     }
@@ -24,15 +24,13 @@ extension CharacterProvider: ApiEndpoint {
     }
     
     var separatorPath: String? {
-        "character"
+        "episode"
     }
     
     var path: String {
         switch self {
-        case .getAllCharacters: return ""
-        case .getSingleCharacter(let id): return "\(id)"
-        case .getMultipleCharacter(let ids): return "\(ids.map { "\($0)" }.joined(separator: ",").dropLast())"
-        case .filterCharacters: return ""
+        case .getSingleEpisode(let id): return "\(id)"
+        default: return ""
         }
     }
     
@@ -42,7 +40,7 @@ extension CharacterProvider: ApiEndpoint {
     
     var queryForCall: [URLQueryItem]? {
         switch self {
-        case .filterCharacters(let queryItems): return queryItems
+        case .filterEpisodes(let queryItems): return queryItems
         default: return nil
         }
     }

@@ -11,7 +11,7 @@ class EpisodesViewController:    UIViewController {
                                     
     @IBOutlet weak var tableView: UITableView!
     var episodes: [Episode] = []
-    
+    let service = RickAndMortyService(httpClient: URLSession.shared)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,26 +31,17 @@ class EpisodesViewController:    UIViewController {
     }
     
     func getAllEpisodes() {
-        let baseUrl = "https://rickandmortyapi.com/api/"
-        let endpoint = "episode"
-        guard let url = URL(string: "\(baseUrl)\(endpoint)") else { return }
-        let urlRequest = URLRequest(url: url)
-        let urlSession = URLSession.shared.dataTask(with: urlRequest) { data, urlResponse, error in
-            if let error = error { print(error); return }
-            guard let data = data else { return }
-            do {
-                let episodesInfo = try JSONDecoder().decode(EpisodesInfo.self, from: data)
+        service.getAllEpisodes { result in
+            switch result {
+            case .success(let episodesInfo):
                 self.episodes = episodesInfo.results;
-                print(self.episodes)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-            } catch let error {
+            case .failure(let error):
                 print(error)
-                return
             }
         }
-        urlSession.resume()
     }
 
 }

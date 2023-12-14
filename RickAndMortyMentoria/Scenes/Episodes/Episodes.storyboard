@@ -30,7 +30,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YIH-Jr-Jmy" secondAttribute="bottom" id="X4Z-pU-KGa"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="list.dash" catalog="system" id="kvF-ab-AbT" userLabel="Episodes"/>
+                    <tabBarItem key="tabBarItem" title="Episodes" image="list.dash" catalog="system" id="kvF-ab-AbT" userLabel="Episodes"/>
                     <navigationItem key="navigationItem" title="Episodes" id="MaU-vo-LkY">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="l9U-s8-SZs"/>
                     </navigationItem>

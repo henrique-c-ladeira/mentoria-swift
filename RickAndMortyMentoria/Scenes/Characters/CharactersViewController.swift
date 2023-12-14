@@ -13,6 +13,7 @@ class CharactersViewController: UIViewController {
     
     var characters: [Character] = []
     var imageLoader: ImageLoader { .shared }
+    var service = RickAndMortyService(httpClient: URLSession.shared)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +23,8 @@ class CharactersViewController: UIViewController {
     }
     
     @IBAction func searchIconTapped(_ sender: Any) {
-        let viewController = UIViewController();
-        viewController.view.backgroundColor = .green
-        viewController.title = "Navigation Test"
-        
-        navigationController?.pushViewController(viewController, animated: true)
+        let searchViewController = SearchViewController(type: title)
+        navigationController?.pushViewController(searchViewController, animated: true)
     }
     
     func configureCollectionView() {
@@ -47,24 +45,32 @@ class CharactersViewController: UIViewController {
     }
     
     func getAllCharacters() {
-        let baseUrl = "https://rickandmortyapi.com/"
-        let endpoint = "api/character"
-        guard let url = URL(string: "\(baseUrl)\(endpoint)") else { return }
-        let urlRequest = URLRequest(url: url)
-        let urlSession = URLSession.shared.dataTask(with: urlRequest) {data, _, error in
-            if let _ = error { return }
-            guard let data = data else { return }
-            do {
-                let characterInfo = try JSONDecoder().decode(CharacterInfo.self, from: data)
+        let item = QueryBuilder()
+            .getResult()
+        service.filterCharacters(queryItems: item) { result in
+            switch result {
+            case .success(let characterInfo):
                 self.characters = characterInfo.results
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
-            } catch let error {
+            case .failure(let error):
                 print(error)
             }
         }
-        urlSession.resume()
+        
+//        service.getAllCharacters { result in
+//            switch result {
+//            case .success(let characterInfo):
+//                self.characters = characterInfo.results
+//                DispatchQueue.main.async {
+//                    self.collectionView.reloadData()
+//                }
+//            case .failure(let error):
+//                print(error)
+//            }
+//
+//        }
     }
 }
 
