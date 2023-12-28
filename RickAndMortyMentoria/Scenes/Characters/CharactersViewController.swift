@@ -23,7 +23,7 @@ class CharactersViewController: UIViewController {
     }
     
     @IBAction func searchIconTapped(_ sender: Any) {
-        let searchViewController = SearchViewController(type: title)
+        let searchViewController = SearchViewController(type: title, searchType: .characters)
         navigationController?.pushViewController(searchViewController, animated: true)
     }
     
