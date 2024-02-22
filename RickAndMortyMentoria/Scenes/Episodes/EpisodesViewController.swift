@@ -26,6 +26,11 @@ class EpisodesViewController:    UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "episodeCell")
     }
     
+    @IBAction func searchTapped(_ sender: Any) {
+        let searchViewController = SearchViewController(type: title, searchType: .episode)
+        navigationController?.pushViewController(searchViewController, animated: true)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }

@@ -41,7 +41,8 @@ class LocationsViewController: UIViewController {
     }
     
     @IBAction func searchButtonTapped(_ sender: Any) {
-        
+        let searchViewController = SearchViewController(type: title, searchType: .location)
+        navigationController?.pushViewController(searchViewController, animated: true)
     }
     
 

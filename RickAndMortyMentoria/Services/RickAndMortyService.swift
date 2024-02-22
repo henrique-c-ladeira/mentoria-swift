@@ -69,6 +69,42 @@ class RickAndMortyService: GenericHTTPService {
         }
     }
     
+    func filterLocation(queryItems: [URLQueryItem], completion: @escaping (Result<LocationInfo, Error>) -> Void) {
+        let provider = LocationProvider.filterLocation(queryItems: queryItems)
+        let request = provider.makeRequest
+        httpClient.perform(request: request) { result in
+            switch result {
+            case .success(let (data, _)):
+                do {
+                    let decoded: LocationInfo = try JSONDecoder().decode(LocationInfo.self, from: data)
+                    completion(.success(decoded))
+                } catch (let error) {
+                    completion(.failure(error))
+                }
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func filterEpisodes(queryItems: [URLQueryItem], completion: @escaping (Result<EpisodesInfo, Error>) -> Void) {
+        let provider = EpisodesProvider.filterEpisodes(queryItems: queryItems)
+        let request = provider.makeRequest
+        httpClient.perform(request: request) { result in
+            switch result {
+            case .success(let (data, _)):
+                do {
+                    let decoded: EpisodesInfo = try JSONDecoder().decode(EpisodesInfo.self, from: data)
+                    completion(.success(decoded))
+                } catch (let error) {
+                    completion(.failure(error))
+                }
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
     // MARK: - Location
     func getAllLocations(completion: @escaping (Result<LocationInfo, Error>) -> Void) {
         let provider = LocationProvider.getAllLocations

@@ -15,17 +15,23 @@ enum QueryArgument: String {
     case type
     case gender
     
-    enum Status: String {
+    enum Status: String, CaseIterable {
         case alive
         case dead
         case unknown
     }
     
-    enum Gender: String {
+    enum Gender: String, CaseIterable {
         case female
         case male
         case genderless
         case unknown
+    }
+    
+    enum LocationType: String, CaseIterable {
+        case cluster
+        case planet
+        case microverse
     }
 }
 

@@ -15,6 +15,7 @@
                 <outlet property="noResultsView" destination="5DC-hK-NFN" id="xQZ-Qj-z0o"/>
                 <outlet property="queryStackView" destination="pD3-8B-i9V" id="nnx-el-dTx"/>
                 <outlet property="searchBar" destination="aRM-Nd-UHM" id="wIc-BH-nfg"/>
+                <outlet property="searchResultTableView" destination="pT2-NJ-ez7" id="iqo-L3-Hur"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,6 +37,10 @@
                         <constraint firstAttribute="height" constant="40" id="DDV-Dk-z54"/>
                     </constraints>
                 </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pT2-NJ-ez7">
+                    <rect key="frame" x="0.0" y="165" width="393" height="653"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DC-hK-NFN">
                     <rect key="frame" x="0.0" y="165" width="393" height="653"/>
                     <subviews>
@@ -47,7 +52,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQl-bh-gz3">
-                            <rect key="frame" x="175.66666666666666" y="361.66666666666663" width="42" height="21"/>
+                            <rect key="frame" x="176" y="361.66666666666663" width="41.333333333333343" height="20.333333333333314"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -70,14 +75,18 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5DC-hK-NFN" secondAttribute="bottom" id="Hn3-QN-ehj"/>
                 <constraint firstItem="aRM-Nd-UHM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J3w-9m-6bX"/>
                 <constraint firstItem="5DC-hK-NFN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OI7-wJ-L4w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pT2-NJ-ez7" secondAttribute="bottom" id="PpO-Gh-QoA"/>
                 <constraint firstItem="pD3-8B-i9V" firstAttribute="top" secondItem="aRM-Nd-UHM" secondAttribute="bottom" constant="10" id="RyK-uG-vza"/>
+                <constraint firstItem="pT2-NJ-ez7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bvO-4p-Xo8"/>
                 <constraint firstItem="pD3-8B-i9V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dPz-wV-oIk"/>
+                <constraint firstItem="pT2-NJ-ez7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eh7-la-N8Y"/>
                 <constraint firstItem="aRM-Nd-UHM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="g66-3Y-7s1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pD3-8B-i9V" secondAttribute="trailing" id="r2q-el-OSi"/>
                 <constraint firstItem="5DC-hK-NFN" firstAttribute="top" secondItem="pD3-8B-i9V" secondAttribute="bottom" id="tU7-ji-AiN"/>
                 <constraint firstItem="pD3-8B-i9V" firstAttribute="top" secondItem="aRM-Nd-UHM" secondAttribute="bottom" constant="10" id="xiM-VE-Ird"/>
+                <constraint firstItem="pT2-NJ-ez7" firstAttribute="top" secondItem="pD3-8B-i9V" secondAttribute="bottom" id="xmg-A2-W3V"/>
             </constraints>
-            <point key="canvasLocation" x="26" y="21"/>
+            <point key="canvasLocation" x="25.190839694656489" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>

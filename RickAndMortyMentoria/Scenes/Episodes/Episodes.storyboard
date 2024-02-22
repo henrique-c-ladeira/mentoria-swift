@@ -32,7 +32,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Episodes" image="list.dash" catalog="system" id="kvF-ab-AbT" userLabel="Episodes"/>
                     <navigationItem key="navigationItem" title="Episodes" id="MaU-vo-LkY">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="l9U-s8-SZs"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="l9U-s8-SZs">
+                            <connections>
+                                <action selector="searchTapped:" destination="Y6W-OH-hqX" id="dvy-0P-XT4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
